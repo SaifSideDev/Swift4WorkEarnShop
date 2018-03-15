@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-UltraLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopBG" translatesAutoresizingMaskIntoConstraints="NO" id="i5c-TD-oqR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTt-Gz-BU3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WorkEarnShop" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="pSY-Rc-N3C">
+                                <rect key="frame" x="38.666666666666657" y="242.99999999999997" width="299.33333333333337" height="61.666666666666657"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mi-n5-v9v">
+                                <rect key="frame" x="168" y="310" width="40.333333333333343" height="95.666666666666686"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="70"/>
+                                <color key="textColor" red="0.34307486970000001" green="0.48795046910000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tTt-Gz-BU3" firstAttribute="width" secondItem="i5c-TD-oqR" secondAttribute="width" id="4rf-j6-rbk"/>
+                            <constraint firstItem="i5c-TD-oqR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IRd-HF-gBt"/>
+                            <constraint firstItem="4Mi-n5-v9v" firstAttribute="top" secondItem="pSY-Rc-N3C" secondAttribute="bottom" constant="5.3333333333333712" id="V2z-t4-eaO"/>
+                            <constraint firstAttribute="bottom" secondItem="i5c-TD-oqR" secondAttribute="bottom" id="Wew-yy-YR0"/>
+                            <constraint firstItem="pSY-Rc-N3C" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ch5-VQ-s9W"/>
+                            <constraint firstItem="i5c-TD-oqR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dbR-Bw-XVj"/>
+                            <constraint firstItem="pSY-Rc-N3C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="199" id="fiL-ay-hUq"/>
+                            <constraint firstItem="4Mi-n5-v9v" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gl8-lY-hm3"/>
+                            <constraint firstItem="tTt-Gz-BU3" firstAttribute="centerY" secondItem="i5c-TD-oqR" secondAttribute="centerY" id="hKg-c6-N3K"/>
+                            <constraint firstItem="tTt-Gz-BU3" firstAttribute="height" secondItem="i5c-TD-oqR" secondAttribute="height" id="l4L-Eo-gSW"/>
+                            <constraint firstItem="tTt-Gz-BU3" firstAttribute="centerX" secondItem="i5c-TD-oqR" secondAttribute="centerX" id="rgP-VX-uxE"/>
+                            <constraint firstItem="i5c-TD-oqR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="uEj-fZ-6BK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shopBG" width="4608" height="3072"/>
+    </resources>
+</document>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-UltraLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="WorkEarnShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopBG" translatesAutoresizingMaskIntoConstraints="NO" id="5jN-jn-pYh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuu-aK-Uue">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ytd-Uf-AyW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Hourly Wage" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kH1-d0-XxF" customClass="CurrencyTextField" customModule="WorkEarnShop" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="202" width="316" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="dp3-Zu-RrQ"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Window Shopping Item Cost" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tNe-Ie-CRJ" customClass="CurrencyTextField" customModule="WorkEarnShop" customModuleProvider="target">
+                                            <rect key="frame" x="30" y="267" width="316" height="40"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WorkEarnShop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3I-h4-9Rb">
+                                            <rect key="frame" x="71.666666666666686" y="100" width="233" height="48"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="35"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999999999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIp-8P-MhF">
+                                            <rect key="frame" x="30" y="347" width="316" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="xON-Za-GIx"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="44"/>
+                                            <color key="textColor" red="0.34307486970000001" green="0.48795046910000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKN-Hi-Aoa">
+                                            <rect key="frame" x="160.33333333333334" y="430" width="56" height="29"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="21"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iid-7S-LXr">
+                                            <rect key="frame" x="30" y="752" width="316" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="a0W-Kb-9UM"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" title="Reset">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLZ-ad-ofp"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iid-7S-LXr" firstAttribute="leading" secondItem="Ytd-Uf-AyW" secondAttribute="leading" constant="30" id="0Ra-7J-aIB"/>
+                                        <constraint firstItem="GIp-8P-MhF" firstAttribute="top" secondItem="tNe-Ie-CRJ" secondAttribute="bottom" constant="40" id="2Yk-Le-phU"/>
+                                        <constraint firstItem="tNe-Ie-CRJ" firstAttribute="leading" secondItem="kH1-d0-XxF" secondAttribute="leading" id="9Jl-PH-8m9"/>
+                                        <constraint firstItem="tNe-Ie-CRJ" firstAttribute="trailing" secondItem="kH1-d0-XxF" secondAttribute="trailing" id="D14-Fv-VYx"/>
+                                        <constraint firstItem="kH1-d0-XxF" firstAttribute="leading" secondItem="Ytd-Uf-AyW" secondAttribute="leading" constant="30" id="DU5-pj-gN1"/>
+                                        <constraint firstItem="tNe-Ie-CRJ" firstAttribute="height" secondItem="kH1-d0-XxF" secondAttribute="height" id="GYC-2K-eV8"/>
+                                        <constraint firstItem="dKN-Hi-Aoa" firstAttribute="top" secondItem="GIp-8P-MhF" secondAttribute="bottom" constant="-17" id="RW5-zP-mR3"/>
+                                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="GIp-8P-MhF" secondAttribute="trailing" constant="29" id="TSw-xy-07t"/>
+                                        <constraint firstAttribute="bottom" secondItem="iid-7S-LXr" secondAttribute="bottom" constant="30" id="WL6-mu-YPT"/>
+                                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="kH1-d0-XxF" secondAttribute="trailing" constant="29" id="X9c-v5-KSc"/>
+                                        <constraint firstItem="kH1-d0-XxF" firstAttribute="top" secondItem="m3I-h4-9Rb" secondAttribute="bottom" constant="54" id="XSl-k1-Hna"/>
+                                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="iid-7S-LXr" secondAttribute="trailing" constant="29" id="cjB-vM-87h"/>
+                                        <constraint firstItem="m3I-h4-9Rb" firstAttribute="centerX" secondItem="Ytd-Uf-AyW" secondAttribute="centerX" id="dMI-od-QLf"/>
+                                        <constraint firstItem="m3I-h4-9Rb" firstAttribute="top" secondItem="Ytd-Uf-AyW" secondAttribute="top" constant="100" id="jox-y7-dx6"/>
+                                        <constraint firstItem="tNe-Ie-CRJ" firstAttribute="top" secondItem="kH1-d0-XxF" secondAttribute="bottom" constant="25" id="kr4-40-26a"/>
+                                        <constraint firstItem="dKN-Hi-Aoa" firstAttribute="centerX" secondItem="Ytd-Uf-AyW" secondAttribute="centerX" id="umB-Sp-tcN"/>
+                                        <constraint firstItem="GIp-8P-MhF" firstAttribute="leading" secondItem="Ytd-Uf-AyW" secondAttribute="leading" constant="30" id="wUl-SO-LTz"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" red="0.34307486970000001" green="0.48795046910000001" blue="1" alpha="0.44883531441717789" colorSpace="custom" customColorSpace="sRGB"/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5jN-jn-pYh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="81A-O8-ULd"/>
+                            <constraint firstItem="5jN-jn-pYh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EjY-Mk-QzB"/>
+                            <constraint firstAttribute="bottom" secondItem="5jN-jn-pYh" secondAttribute="bottom" id="Rp6-7B-zML"/>
+                            <constraint firstItem="yuu-aK-Uue" firstAttribute="centerX" secondItem="5jN-jn-pYh" secondAttribute="centerX" id="SUe-D3-033"/>
+                            <constraint firstItem="yuu-aK-Uue" firstAttribute="height" secondItem="5jN-jn-pYh" secondAttribute="height" id="VVh-yg-sUA"/>
+                            <constraint firstItem="5jN-jn-pYh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZKF-LD-mQg"/>
+                            <constraint firstItem="yuu-aK-Uue" firstAttribute="width" secondItem="5jN-jn-pYh" secondAttribute="width" id="mxv-Sa-6xp"/>
+                            <constraint firstItem="yuu-aK-Uue" firstAttribute="centerY" secondItem="5jN-jn-pYh" secondAttribute="centerY" id="oLs-xN-UHa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hourlyWageTextField" destination="kH1-d0-XxF" id="vTM-5Q-ugK"/>
+                        <outlet property="hoursLabel" destination="dKN-Hi-Aoa" id="RHb-HO-mCd"/>
+                        <outlet property="itemCostTextField" destination="tNe-Ie-CRJ" id="Tsx-OM-gNW"/>
+                        <outlet property="resetButton" destination="iid-7S-LXr" id="KTl-fP-Z4t"/>
+                        <outlet property="resultLabel" destination="GIp-8P-MhF" id="NOM-zs-HG6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shopBG" width="4608" height="3072"/>
+    </resources>
+</document>
